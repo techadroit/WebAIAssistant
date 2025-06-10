@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Paper, Typography } from '@mui/material';
 
-export interface Message {
+export interface ChatMessage {
   id: string;
   text: string;
   sender: 'user' | 'assistant';
@@ -9,7 +9,7 @@ export interface Message {
 }
 
 interface ChatBodyProps {
-  messages: Message[];
+  messages: ChatMessage[];
 }
 
 const ChatBody: React.FC<ChatBodyProps> = ({ messages }) => {
