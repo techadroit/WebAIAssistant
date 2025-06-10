@@ -1,10 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React, {StrictMode} from 'react'
 import './style.css'
-import Chat from './feature/chat/Chat'
+import {createRoot} from "react-dom/client";
+import App from "./app.tsx";
 
-ReactDOM.createRoot(document.getElementById('app')!).render(
-  <React.StrictMode>
-    <Chat />
-  </React.StrictMode>,
+createRoot(document.getElementById('app')!).render(
+    <StrictMode>
+        <App />
+    </StrictMode>,
 )

@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 
 import ChatToolbar from './toolbar/ChatToolbar';
-import ChatBody, { Message } from './chat_body/ChatBody';
+import ChatBody, {type Message } from './chat_body/ChatBody';
 import ChatFooter from './footer/ChatFooter';
 
 const Chat: React.FC = () => {
