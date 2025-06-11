@@ -29,21 +29,9 @@ const ChatScreen: React.FC = () => {
     // Handle connect/disconnect from toolbar
     const handleConnect = (isConnected: boolean) => {
         if (isConnected) {
-            dispatch({
-                type: 'ADD_MESSAGE',
-                payload: {
-                    text: 'Connected! How can I help you today?',
-                    sender: 'assistant'
-                }
-            });
+
         } else {
-            dispatch({
-                type: 'ADD_MESSAGE',
-                payload: {
-                    text: 'Disconnected from the service.',
-                    sender: 'assistant'
-                }
-            });
+
         }
     };
 
